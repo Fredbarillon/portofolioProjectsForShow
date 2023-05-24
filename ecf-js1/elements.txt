@@ -1,0 +1,10 @@
+["Votre demande concerne",
+"Information articles",
+"Commande & paiement",
+"Expédition & livraison",
+"Retour, échange & remboursement",
+"Code promo & Bon d'achat",
+"Newsletters",
+"Problème technique",
+"Autres demandes",
+"Protection des données personnelles"]
