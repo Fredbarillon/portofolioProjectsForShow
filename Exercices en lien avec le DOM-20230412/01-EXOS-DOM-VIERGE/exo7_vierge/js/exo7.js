@@ -1,0 +1,12 @@
+const div1 = document.getElementById("contenu");
+const info = document.getElementById("infos");
+const para = document.createElement("p");
+info.appendChild(para);
+const list = document.createElement("ul");
+para.appendChild(list);
+const liHaut = document.createElement("li");
+const liLong = document.createElement("li");
+list.append(liHaut, liLong);
+liHaut.textContent = `H=${div1.clientHeight} px`;
+liLong.textContent = `L=${div1.clientWidth} px`;
+info.style.paddingLeft ="28px";
