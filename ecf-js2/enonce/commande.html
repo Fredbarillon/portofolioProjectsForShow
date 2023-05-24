@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Commande</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="divForm col-auto">
+                <div class="alert alert-primary" role="alert">
+                    <h1>Commande</h1>
+                </div>
+                <h2 id="titre">Client :</h2>
+                <div>
+                    <span id="nom"></span>
+                    <span id="prenom"></span>
+                </div>
+                <div id="courriel"></div>
+                <h2>Adresse : </h2>
+                <div id="adresse"></div>
+                <span id="codepostal"></span>
+                <span id="ville"></span>
+                <hr>
+                <h2 classe="m-5">Choix des ouvrages :</h2>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        Libellé
+                    </div>
+                    <div class="col-1">
+                        Référence
+                    </div>
+                    <div class="col-1">
+                        Quantité
+                    </div>
+                    <div class="col">
+                        Prix unitaire (€)
+                    </div>
+                    <div class="col">
+                        Prix (€)
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row mb-3" id="ligne1">
+                    <div class="col-4">
+                        <select name="designation1" id="designation1" class="form-control">
+
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <input name="ref1" value="" size="3" readonly="readonly" class="form-control">
+                    </div>
+                    <div class=" col-1">
+                        <input name="quantite1" maxlength="3" size="3" class="form-control">
+                    </div>
+                    <div class=" col">
+                        <input name="prixUnitaire1" maxlength="10" size="8" readonly="readonly" class="form-control">
+                    </div>
+                    <div class=" col">
+                        <input name="prix1" value="" maxlength="10" align="right" size="8" readonly="readonly"
+                            class="form-control">
+                    </div>
+                    <div class=" col">
+                        <input type="button" value="Supprimer" id="sup1" class="btn btn-danger">
+                    </div>
+                </div>
+                <div class="row mb-3" id="ligne2">
+                    <div class="col-4">
+                        <select name="designation2" id="designation2" class="form-control">
+
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <input name="ref2" value="" size="3" readonly="readonly" class="form-control">
+                    </div>
+                    <div class="col-1">
+                        <input name="quantite2" maxlength="3" size="3" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input name="prixUnitaire2" maxlength="10" size="8" readonly="readonly" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input name="prix2" value="" maxlength="10" align="right" size="8" readonly="readonly"
+                            class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="button" value="Supprimer" id="sup2" class="btn btn-danger">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-2">
+                        TOTAL (€)
+                    </div>
+                    <div class="col-2">
+                        <input id="total" type="text" readonly="readonly" size="8" class="form-control">
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="button" value="Ajouter une ligne" id="add" class="btn btn-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="js/commande.js"></script>
+</body>
+
+</html>
